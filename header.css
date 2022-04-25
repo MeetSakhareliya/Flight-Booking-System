@@ -1,5 +1,5 @@
 .head{
-	background-image:url(//content.skyscnr.com/m/785bdfcbe683606c/Large-Flights-hero-2.jpg?crop=1800px:1375px&amp;quality=60);
+	/* background-image:url(//content.skyscnr.com/m/785bdfcbe683606c/Large-Flights-hero-2.jpg?crop=1800px:1375px&amp;quality=60); */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -23,7 +23,7 @@ header{
 svg{
 	justify-content: flex-start;
 	align-items: center;
-	height: 80px;
+	height: 100px;
 	width: 20%;
 	margin-left: 50px;
 }
