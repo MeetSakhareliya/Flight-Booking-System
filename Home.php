@@ -5,6 +5,25 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="header.css" />
 
+    <style>
+      .head {
+        background-image: url(//content.skyscnr.com/m/785bdfcbe683606c/Large-Flights-hero-2.jpg?crop=1800px:1375px&amp;quality=60);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        font-family: verdana;
+      }
+
+      .head p {
+        margin-left: 900px;
+        font-size: 100px;
+        color: white;
+      }
+    </style>
+
   </head>
 
   <body>
@@ -18,9 +37,9 @@
     </div>
 
     <div class="intro">
-      <p class="heading">our services</p>
+      <p class="heading">Our services</p>
       <hr width="8%" size="3px" color="#ff7b59" align="center" />
-      <p>
+      <p style="text-align:center; width:120vw;">
         Plan your perfect trip Search Flights and Book to our most popular
         destinations
       </p>
@@ -93,22 +112,6 @@
       </div>
     </div>
 
-    <div class="footer">
-      <div class="about">
-        <h2>About Us</h2>
-        <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
-        <a href="/">Careers</a> <a href="/">Terms of Service</a>
-      </div>
-      <div class="contact">
-        <h2>Contact Us</h2>
-        <a href="/">Contact</a> <a href="/">Support</a>
-        <a href="/">Destinations</a>
-      </div>
-      <div class="social">
-        <h2>Social Media</h2>
-        <a href="/">Instagram</a> <a href="/">Facebook</a>
-        <a href="/">Youtube</a> <a href="/">Twitter</a>
-      </div>
-    </div>
+    <?php include('Footer.php'); ?> 
   </body>
 </html>

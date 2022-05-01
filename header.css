@@ -1,71 +1,62 @@
-.head{
-	/* background-image:url(//content.skyscnr.com/m/785bdfcbe683606c/Large-Flights-hero-2.jpg?crop=1800px:1375px&amp;quality=60); */
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	min-height: 100vh;
-	background-color: rgba(0,0,0,0.5);
-	background-blend-mode: multiply;
-	font-family: verdana;
+* {
+  margin: 0px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size:16px;
 }
 
-.head p{
-	margin-left: 900px;
-	font-size: 100px;
-	color: white;
+header {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-header{
-	display: flex;
-	flex-wrap: wrap;
+svg {
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  width: 20%;
+  margin-left: 50px;
 }
 
-svg{
-	justify-content: flex-start;
-	align-items: center;
-	height: 100px;
-	width: 20%;
-	margin-left: 50px;
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  /*margin-right: 50px;*/
+  height: 80px;
+  width: 65%;
 }
 
-ul{
-	list-style-type: none;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2.5rem;
-	justify-content: flex-end;
-	align-items: center;
-	align-content: center;
-	/*margin-right: 50px;*/
-	height: 80px;
-	width: 65%;
-	
+a {
+  text-decoration: none;
+  color: white;
 }
 
-a{
-	text-decoration: none;
-	color: white;
+a:hover {
+  color: #ff7b59;
 }
 
-a:hover{
-	color: #ff7b59;
+.footer {
+  display: flex;
+  background-color:#131313 ;  /*#131313   #02122c*/
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  /* margin-top: ; */
 }
 
-.footer{
-	display: flex;
-	background-color: #131313;
-	justify-content: space-around;
-	align-items: center;
-  height: 200px;
+h2 {
+  margin: 20px auto;
 }
 
-h2{
-	margin: 20px auto;
-}
-
-.about,.social,.contact{
-	display: flex;
-	flex-direction: column;
-	color: #ff7b59;
-	gap:0.5rem;
+.about,
+.social,
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: #ff7b59;
+  gap: 0.7rem;
 }

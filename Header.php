@@ -1,9 +1,22 @@
+<?php
+    if(!isset($_SESSION)) session_start();
+    if(isset($_GET['aaa'])){
+        echo "hello";
+        session_destroy();
+        header("Location:Home.php");
+    }
+?>
+
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="header.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
         <style>
             header{
-                background-color:black;
+                /* background-color:#02122c; */
+                /* box-shadow: 2px 2px #02122c; */
                 top:0;
                 left:0;
             }
@@ -41,9 +54,18 @@
                         echo '<li><a href="About.php">About</a></li>';
                 ?>
                 <?php
-                    if(!isset($_SESSION['user']))
-                     echo "<li><a href='login.html'>Login</a></li>";
-                    else echo $_SESSION['user'];
+                    if(basename($_SERVER['SCRIPT_NAME'])!="Login.php"){
+                        if(!isset($_SESSION['name']))
+                        echo "<li><a href='Login.php'>Login</a></li>";
+                        else{
+                            echo "<li><a href='Profile.php'>".$_SESSION['name']."</a></li>";
+                            echo "<li>
+                            <form action=".$_SERVER['PHP_SELF']." method='GET'>
+                                <button type='submit' name='aaa'>Logout</button>
+                            </form></li>";
+                            
+                        }
+                    }
                 ?>
                 
                 </ul>
